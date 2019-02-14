@@ -114,6 +114,20 @@ lsinterim:
 stategen_loader:
 	$(PYTHON_INTERPRETER) src/data/process/loader_state_gen.py data/interim/loader.csv data/processed/
 
+## PROCESS DATA
+stategen_screenprinter:
+	$(PYTHON_INTERPRETER) src/data/process/sp_state_gen.py data/interim/screenprinter.csv data/processed/
+
+
+## PROCESS DATA
+stategen_pp1:
+	$(PYTHON_INTERPRETER) src/data/process/pp1_state_gen.py data/interim/pickandplace1.csv data/processed/
+
+
+## PROCESS DATA
+stategen_pp2:
+	$(PYTHON_INTERPRETER) src/data/process/pp2_state_gen.py data/interim/pickandplace2.csv data/processed/
+
 
 ## UPLOAD PROCESSED DATA TO ES
 loader_processed_csv := $(shell ls -t data/processed/loader-*.csv ) 
