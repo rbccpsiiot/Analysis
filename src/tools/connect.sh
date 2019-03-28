@@ -14,7 +14,8 @@ ip_file="$SCRIPTPATH/tmp/vinyasVPNIP"
 |----------------------------|\n" && exit
 
 sshuser=root
-sshhost=droplet
+#sshhost=droplet
+sshhost=feynalytics.ml
 sshport=22
 
 sshuttleSUBNET="10.10.10.1/24"
