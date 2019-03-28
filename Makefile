@@ -130,9 +130,9 @@ stategen_pp2:
 
 
 ## UPLOAD PROCESSED DATA TO ES
-loader_processed_csv := $(shell ls -t data/processed/loader-*.csv ) 
-esupload_loader:
-	cd src/tools/CSV_UPLOAD && $(PYTHON_INTERPRETER) csv_upload.py ../../../$(loader_processed_csv) xxx http://localhost:9200/
+#loader_processed_csv := $(shell ls -t data/processed/loader-*.csv ) 
+#esupload_loader:
+#	cd src/tools/CSV_UPLOAD && $(PYTHON_INTERPRETER) csv_upload.py ../../../$(loader_processed_csv) xxx http://localhost:9200/
 
 #################################################################################
 # Self Documenting Commands                                                     #
