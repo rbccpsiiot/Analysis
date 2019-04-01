@@ -94,7 +94,7 @@ connect:
 	sh src/tools/connect.sh
 
 ## Get RAW data directly from VINYAS server /\/
-fetchrawdata: connect
+fetchrawdata: connect prepare_data_directory
 	cd src/data/get_raw_data/ && sh get.sh $(mins)
 
 ## Segregate RAW data
