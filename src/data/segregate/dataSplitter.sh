@@ -4,7 +4,7 @@
 rawfile="../../../data/raw/raw.csv"
 
 fline=$(head -1 $rawfile)
-for dev in "loader" "screenprinter_plus_vaf" "reflowoven_vaf"
+for dev in "loader" "screenprinter_plus_vaf" "reflowoven_vaf" "pickandplace2"
 do
 	device="../../../data/interim/$dev"
         echo "Grepping.... $device"
@@ -14,5 +14,3 @@ do
         rm temp
 	sed -i "1i $fline" "$device.csv"
 done
-
-
